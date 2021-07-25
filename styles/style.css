@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* background: url(../images/barbecue.jpg),
+                linear-gradient(100deg,#ff4169,#7c26f8); */
+    background-attachment: fixed;
+}
+
+li{
+    padding: 10px;
+}
+
+#splyCraftLogo{
+    border-radius: 15px;
+}
+
+#quadrado{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
+.icon-instagram:before {
+    content: "\f16d";
+}
+.icon-headphones:before {
+    content: "\f025";
+  }
