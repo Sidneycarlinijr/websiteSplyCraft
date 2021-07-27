@@ -9,10 +9,10 @@ html, body, #home {
 
 
 body{
-    background: url(../images/capa.png),
-                linear-gradient(100deg,#ff4169,#7c26f8);
+    background: url(../images/capa.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 
 li{
@@ -34,10 +34,11 @@ li{
 }
 
 .icon-instagram:before {
-    content: url(../images/iconmonstr-instagram-11.svg);
+    content: url(../images/instagram.png);
+    width: 30px
 }
 .icon-headphones:before {
-    content: url(../images/iconmonstr-discord-1.svg);
+    content: url(../images/discord.png);
   }
 
 #servidores{
@@ -48,7 +49,7 @@ li{
 
 
 
-
+/* Cards */
 .card {
     cursor: pointer;
     top: 50%;
@@ -92,3 +93,7 @@ button:focus {
     margin-top: 20px;
     padding-bottom: 15px
 } */
+
+.card-active{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
