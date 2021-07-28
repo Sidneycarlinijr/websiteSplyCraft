@@ -21,6 +21,8 @@ li{
 
 .navbar{
     font-weight: bold;
+    height: 1px;
+    transform: translateY(55px);
 }
 
 #splyCraftLogo{
@@ -50,8 +52,9 @@ li{
     padding-bottom: 20px;
 }
 
-
-
+#carousel-container{
+    margin-bottom: 20%;
+}
 
 /* Cards */
 .card {
@@ -131,4 +134,5 @@ button:focus {
 }
 .azul-escuro{
     color: #1D3557!important;
+    background-color: #1D3557!important;
 }
