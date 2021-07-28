@@ -19,6 +19,10 @@ li{
     padding: 10px;
 }
 
+.navbar{
+    font-weight: bold;
+}
+
 #splyCraftLogo{
     border-radius: 15px;
 }
@@ -96,4 +100,35 @@ button:focus {
 
 .card-active{
     box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
+
+.cards-img{
+    width: 150px;
+}
+
+/* Colors */
+
+.vermelho{
+    background-color: #E63946!important;
+    border-color: #E63946!important;
+}
+.text-vermelho{
+        color: #E63946!important;
+}
+
+.branco{
+    background-color: #F1FAEE!important;
+}
+.text-branco{
+    color: #F1FAEE!important;
+}
+
+.azul-claro{
+    color: #A8DADC!important;
+}
+.azul{
+    color: #457B9D!important;
+}
+.azul-escuro{
+    color: #1D3557!important;
 }
