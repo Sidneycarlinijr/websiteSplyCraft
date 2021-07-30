@@ -30,8 +30,8 @@ li{
 }
 
 #quadrado{
-    height: 500px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
     background-color: black;
 }
 
@@ -107,6 +107,16 @@ button:focus {
 
 .cards-img{
     width: 150px;
+}
+
+.card-border{
+    border-radius: 15px;
+}
+
+.teste{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/capa.jpg);
 }
 
 /* Colors */
