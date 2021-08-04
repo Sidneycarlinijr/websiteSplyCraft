@@ -139,6 +139,11 @@ button:focus {
     transition: transform .5s;
 }
 
+.card-loja:hover{
+    transform: rotateY(180deg);
+}
+
+
 .card-front, .card-back{
     position: absolute;
     width: 100%;
