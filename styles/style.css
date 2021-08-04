@@ -145,7 +145,6 @@ button:focus {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0,0,0, 0.45);
     backface-visibility: hidden;
@@ -163,19 +162,33 @@ button:focus {
     height: 100%;
 }
 
-.card-front-text .unit-1-text{
-    z-index: 2;
-    position: absolute;
-    bottom: 10px;
-    color: #fff;
+.front-card-display{
+    position: relative;
     display: block;
     width: 100%;
 }
 
-.card-front-text{
-    position: relative;
+.front-card-display:after{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: -moz-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(18%, transparent), color-stop(99%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+    background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
+}
+
+.front-card-text{
+    position: absolute;
+    z-index: 2;
     width: 100%;
-    overflow: hidden;
+    bottom: 10px;
     display: block;
 }
 
@@ -218,4 +231,12 @@ button:focus {
 
 .text-cinza{
     color: #555555!important;
+}
+
+.icon-info-circle{
+    position: absolute;
+    content: url(../images/info.svg);
+    left: 8%;
+    width: 40px;
+    bottom: 15%;
 }
