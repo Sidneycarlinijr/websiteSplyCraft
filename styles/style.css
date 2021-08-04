@@ -33,6 +33,7 @@ h3{
     font-weight: bold;
     height: 1px;
     transform: translateY(55px);
+    z-index: 2000;
 }
 
 #splyCraftLogo{
@@ -134,6 +135,7 @@ button:focus {
     position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 15px!important;
 
     transform-style: preserve-3d;
     transition: transform .5s;
@@ -152,7 +154,6 @@ button:focus {
     justify-content: center;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0,0,0, 0.45);
-    backface-visibility: hidden;
 }
 
 .card-front{
@@ -236,6 +237,48 @@ button:focus {
 
 .text-cinza{
     color: #555555!important;
+}
+
+.text-iron{
+    color: #a19d94;
+}
+
+.text-iron-bg{
+    background-color: #a19d94!important;
+}
+
+.text-gold{
+    color: #FFAA00;
+}
+
+.text-gold-bg{
+    background-color: #FFAA00!important;
+}
+  
+.text-diamond{
+    color: #55FFFF;
+}
+
+.text-diamond-bg{
+    background-color: #55FFFF!important;
+}
+
+.text-lendario{
+    color: red;
+}
+
+.text-lendario-bg{
+    background-color: red!important;
+}
+
+.text-white{
+    font-weight: 100;
+}
+
+.card-back-button{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
 }
 
 .icon-info-circle{
