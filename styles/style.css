@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body, #home {
+html, body, #home, #home1 {
 	height: 100%;
 	overflow-x: hidden;
 }
@@ -23,12 +23,16 @@ h3{
     font-size: 23px!important;
     font-weight: bold!important;
 }
+a{
+    color: #F1FAEE!important;
+}
 
 .site-section{
     padding-top: 3.5em;
     background-color: white;
 }
 
+/* Navbar */
 .navbar{
     font-weight: bold;
     height: 1px;
@@ -36,15 +40,43 @@ h3{
     z-index: 2000;
 }
 
+
+
+@media (max-width: 990px) {
+
+    .navbar-nav{
+    display: block!important;
+    position: absolute;
+    width: 115px;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+    .navbar-collapse{
+        /* background-color: #e9ecef!important; */
+        color: black!important;
+    }
+    .ml-auto{
+        display: none;
+    }
+    a.nav-link{
+        color: #212529!important;
+        font-weight: 400;
+    }
+    #home1{
+        height: auto;
+        padding-top: 230px;
+        padding-bottom: 70px;
+    }
+}
+
+.dropdown-item{
+    color: black!important;
+}
+
 #splyCraftLogo{
     border-radius: 15px;
 }
 
-#quadrado{
-    height: 500px;
-    width: 100%;
-    background-color: black;
-}
 
 #capa{
     text-align: center;
