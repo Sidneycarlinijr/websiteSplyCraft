@@ -173,9 +173,11 @@ button:focus {
     transition: transform .5s;
 }
 
-.card-loja:hover{
+/* .card-loja:hover{
     transform: rotateY(180deg);
-}
+    transform-style: preserve-3d;
+    transition: transform .5s;
+} */
 
 
 .card-front, .card-back{
