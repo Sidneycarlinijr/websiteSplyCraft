@@ -1,3 +1,3 @@
-$(".icon-info-circle").click(function(){
-    $(this).parents(".card-loja").addClass("flip");
+$(".card-loja").click(function(){
+    $(this).toggleClass("flip");
 });

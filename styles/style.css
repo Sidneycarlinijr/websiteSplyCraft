@@ -315,10 +315,23 @@ button:focus {
     right: 1%;
 }
 
+.return-icon{
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+}
+
 .icon-info-circle{
     position: absolute;
     content: url(../images/info.svg);
     left: 8%;
     width: 40px;
     bottom: 15%;
+}
+
+.icon-return{
+    content: url(../images/returnicon.svg);
+    
+    width: 40px;
+    
 }
