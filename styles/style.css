@@ -190,10 +190,6 @@ button:focus {
     box-shadow: 10px 10px 10px rgba(0,0,0, 0.45);
 }
 
-.card-front{
-    
-}
-
 .card-back{
     transform: rotateY(180deg);
 }
@@ -236,6 +232,14 @@ button:focus {
     transform: rotateY(180deg);
 } 
 
+.img-pagamento{
+    max-width: 100%;
+}
+
+.payment-methods:hover{
+    background-color: #eeefff;
+    border-radius: 8px;
+}
 
 /* Colors */
 

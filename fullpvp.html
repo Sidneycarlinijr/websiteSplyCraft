@@ -155,7 +155,7 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <img class="card-img" src="./images/cardback.jpg" alt="">
+                            <img class="card-img" src="./images/cardback-iron.jpg" alt="">
                             <div class="card-back-button" onmouseover="sound.play()">
                                 <button type="button" class="btn text-iron-bg text-branco">Doar!</button>
                             </div>
@@ -179,7 +179,7 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <img class="card-img" src="./images/cardback.jpg" alt="">
+                            <img class="card-img" src="./images/cardback-gold.jpg" alt="">
                             <div class="card-back-button" onmouseover="sound.play()">
                                 <button type="button" class="btn text-gold-bg text-branco">Doar!</button>
                             </div>
@@ -203,7 +203,7 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <img class="card-img" src="./images/cardback.jpg" alt="">
+                            <img class="card-img" src="./images/cardback-diamond.jpg" alt="">
                             <div class="card-back-button" onmouseover="sound.play()">
                                 <button type="button" class="btn text-diamond-bg text-branco">Doar!</button>
                             </div>
@@ -227,7 +227,7 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <img class="card-img" src="./images/cardback.jpg" alt="">
+                            <img class="card-img" src="./images/cardback-lendario.jpg" alt="">
                             <div class="card-back-button" onmouseover="sound.play()">
                                 <button type="button" class="btn text-lendario-bg text-branco" data-bs-toggle="modal" data-bs-target="#exampleModal">Doar!</button>
                             </div>
@@ -242,23 +242,33 @@
     </section>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
                     <strong class="text-vermelho">Atenção:</strong> 
-                    Ao realizar uma doação, você confirma que leu e concorda com os 
-                    <a style="color: black!important"href="">termos.</a></br>
+                    <p class="text-cinza">Ao realizar uma doação, você confirma que leu e concorda com os 
+                    <a class="text-vermelho" href="">termos.</a></p>
                 </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h5>Tooltips in a modal</h5>
-  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+                    <h3>Como a ativação acontece?</h3>
+                    <p class="text-cinza"> Ao realizar a compra, informe sempre seu nome em jogo nas observações. Um administrador fará a ativação em minutos.</p>
+                    <div class="row pt-4 align-items-center">
+                        <div class="col-md-6 payment-methods">
+                            <a href="">
+                                <img class="img-pagamento" src="./images/picpay.png" alt="Redirect to Picpay">
+                            </a>
+                        </div>
+                        <div class="col-md-6 payment-methods">
+                            <a href="">
+                                <img class="img-pagamento" src="./images/mercado-pago-logo.png" alt="Redirect to MercadoPago">
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn vermelho text-branco" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
