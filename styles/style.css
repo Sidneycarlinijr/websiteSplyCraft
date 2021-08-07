@@ -5,6 +5,7 @@
 html, body, #home, #home1 {
 	height: 100%;
 	overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -26,7 +27,9 @@ h3{
 a{
     color: #F1FAEE!important;
 }
-
+a:hover{
+    color: #E63946!important;
+}
 .site-section{
     padding-top: 3.5em;
     background-color: white;
@@ -102,7 +105,7 @@ a{
 /* Cards */
 
 .card{
-    padding: 4px;
+    padding: 2px;
     border-radius: 4px!important;
     border: 1px solid #eeeeee!important;
 }
@@ -338,4 +341,15 @@ button:focus {
     
     width: 40px;
     
+}
+
+.copyIp{
+    padding-left: 5rem!important;
+    padding-right: 5rem!important;
+}
+
+.copyButton{
+    width: 30rem;
+    padding: 0;
+    margin: 0;
 }
