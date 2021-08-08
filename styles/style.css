@@ -78,14 +78,25 @@ footer{
         padding-top: 230px;
         padding-bottom: 70px;
     }
+}
+
+@media(max-width: 600px){
+    .copyButton{
+        width: 90vw!important;
+    }
+
     .carousel-control-next{
-        transform: translateX(-45px)!important;
+        transform: translateX(-20px)!important;
     }
     
     .carousel-control-prev {
-        transform: translateX(45px)!important;
+        transform: translateX(20px)!important;
     }
     
+    .indexCard{
+        margin-top: .5rem!important;
+        box-shadow: 0px 0px 0px!important;
+    }
 }
 
 .dropdown-item{
@@ -105,9 +116,16 @@ footer{
     content: url(../images/instagram.png);
     width: 30px
 }
+
 .icon-headphones:before {
     content: url(../images/discord.png);
-  }
+}
+
+.icon-youtube{
+    content: url(../images/icon-youtube.png);
+    width: 23px;
+    padding-bottom: 3px;
+}
 
 #servidores{
     padding-top: 20px;
@@ -127,7 +145,7 @@ footer{
 }
 
 .control-circle:hover{
-    background: white!important;
+    background: #E63946!important;
     transition: 300ms;
 }
 
@@ -173,9 +191,8 @@ footer{
     font-weight: 550
 }
 
-.card.hover,
 .card:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.45);
 }
 
 .img {
@@ -203,7 +220,7 @@ button:focus {
 }
 
 .card-active{
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.45);
 }
 
 .cards-img{
@@ -230,12 +247,6 @@ button:focus {
     transition: transform .5s;
     cursor: pointer; 
 }
-
-/* .card-loja:hover{
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
-    transition: transform .5s;
-} */
 
 
 .card-front, .card-back{
@@ -406,13 +417,13 @@ button:focus {
     
 }
 
-.copyIp{
+/* .copyIp{
     padding-left: 5rem!important;
     padding-right: 5rem!important;
-}
+} */
 
 .copyButton{
-    width: 30rem;
+    width: 300px;
     padding: 0;
     margin: 0;
 }
