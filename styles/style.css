@@ -30,9 +30,17 @@ a{
 a:hover{
     color: #E63946!important;
 }
+
+footer{
+    font-weight: 400;
+}
 .site-section{
     padding-top: 3.5em;
     background-color: white;
+}
+
+.staff-section{
+    padding-top: 3.5em;
 }
 
 /* Navbar */
@@ -174,6 +182,7 @@ button:focus {
 
     transform-style: preserve-3d;
     transition: transform .5s;
+    cursor: pointer; 
 }
 
 /* .card-loja:hover{
@@ -316,6 +325,10 @@ button:focus {
     font-weight: 100;
 }
 
+.text-black{
+    color: black!important;
+}
+
 .card-back-button{
     position: absolute;
     bottom: 1%;
@@ -334,6 +347,10 @@ button:focus {
     left: 8%;
     width: 40px;
     bottom: 15%;
+    animation: changeColor;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .icon-return{
@@ -352,4 +369,9 @@ button:focus {
     width: 30rem;
     padding: 0;
     margin: 0;
+}
+
+@keyframes changeColor{
+    0%{width: 50px;}
+    50%{width: 45px;}
 }
