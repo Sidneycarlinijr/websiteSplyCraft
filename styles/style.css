@@ -5,7 +5,8 @@
 html,
 body,
 #home,
-#home1 {
+#info-pvp,
+#card-section {
   height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -78,7 +79,7 @@ footer {
     color: #212529 !important;
     font-weight: 400;
   }
-  #home1 {
+  #card-section {
     height: auto;
     padding-top: 230px;
     padding-bottom: 70px;
@@ -356,6 +357,82 @@ button:focus {
   transform: rotateY(180deg);
 }
 
+.card-back-div {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  width: 6rem;
+  height: 2.5rem;
+}
+
+.card-back-btn{
+  width: 100%;
+  height: 100%;
+  font-weight: bold!important;
+}
+
+.card-back-btn:hover{
+  opacity: 0.8!important;
+}
+
+.card-back-info{
+  position: absolute;
+  bottom:1%;
+  right: 25%;
+  width: 4rem;
+  height: 2.5rem;
+}
+
+.return-icon {
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+}
+
+.icon-info-circle {
+  position: absolute;
+  content: url(../images/info.svg);
+  left: 8%;
+  width: 40px;
+  bottom: 15%;
+  animation: changeColor;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.icon-return {
+  content: url(../images/returnicon.svg);
+
+  width: 40px;
+}
+
+/* .copyIp{
+    padding-left: 5rem!important;
+    padding-right: 5rem!important;
+} */
+
+.copyButton {
+  width: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes changeColor {
+  0% {
+    width: 45px;
+  }
+  25% {
+    width: 46px;
+  }
+  50% {
+    width: 47px;
+  }
+  100% {
+    width: 48px;
+  }
+}
+
 .img-pagamento {
   max-width: 100%;
 }
@@ -363,6 +440,10 @@ button:focus {
 .payment-methods:hover {
   background-color: #eeefff;
   border-radius: 8px;
+}
+
+.table-content{
+  width: 80%;
 }
 
 /* Colors */
@@ -441,78 +522,3 @@ button:focus {
   color: black !important;
 }
 
-.card-back-div {
-  position: absolute;
-  bottom: 1%;
-  right: 1%;
-  width: 6rem;
-  height: 2.5rem;
-}
-
-.card-back-btn{
-  width: 100%;
-  height: 100%;
-  font-weight: bold!important;
-}
-
-.card-back-btn:hover{
-  opacity: 0.8!important;
-}
-
-.card-back-info{
-  position: absolute;
-  bottom:1%;
-  right: 25%;
-  width: 4rem;
-  height: 2.5rem;
-}
-
-.return-icon {
-  position: absolute;
-  bottom: 0;
-  left: 2%;
-}
-
-.icon-info-circle {
-  position: absolute;
-  content: url(../images/info.svg);
-  left: 8%;
-  width: 40px;
-  bottom: 15%;
-  animation: changeColor;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.icon-return {
-  content: url(../images/returnicon.svg);
-
-  width: 40px;
-}
-
-/* .copyIp{
-    padding-left: 5rem!important;
-    padding-right: 5rem!important;
-} */
-
-.copyButton {
-  width: 300px;
-  padding: 0;
-  margin: 0;
-}
-
-@keyframes changeColor {
-  0% {
-    width: 45px;
-  }
-  25% {
-    width: 46px;
-  }
-  50% {
-    width: 47px;
-  }
-  100% {
-    width: 48px;
-  }
-}
