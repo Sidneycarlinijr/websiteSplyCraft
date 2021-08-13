@@ -5,8 +5,7 @@
 html,
 body,
 #home,
-#info-pvp,
-#card-section {
+#info-pvp{
   height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -41,6 +40,11 @@ footer {
 
 table{
   font-size: 18px;
+  font-weight: bolder!important;
+}
+
+.card-section{
+  margin-top: 50px;
 }
 
 .site-section {
