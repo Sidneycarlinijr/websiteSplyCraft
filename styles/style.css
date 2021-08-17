@@ -393,6 +393,10 @@ button:focus {
   height: 2.5rem;
 }
 
+.btn-vantagens-doar{
+  max-width: 15rem!important;
+}
+
 .return-icon {
   position: absolute;
   bottom: 0;
