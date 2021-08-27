@@ -1,0 +1,12 @@
+body{
+    background: url(../images/skywars.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Ubuntu', Sans-serif!important;
+}
+
+#donations{
+    margin-bottom: 200px;
+}
+

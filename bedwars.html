@@ -1,12 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/bedwars.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     
+    <title>SplyCraft</title>
+</head>
+
+<body>
+    <header>
+        <nav id="home-navbar" class="navbar navbar-expand-lg navbar-dark">
+            <div class="d-flex container ml-4">
+                <a href="index.html" class="navbar-brand">
+                    <img id="splyCraftLogo" width="115" src="./images/splyIcon.jpg" alt="">
+                </a>
+
+                <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-branco">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-vermelho" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Servidores</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a href="#" class="dropdown-item text-vermelho">BedWars</a></li>
+                                <li><a href="fullpvp.html" class="dropdown-item">Full PVP</a></li>
+                                <li><a href="skywars.html" class="dropdown-item">SkyWars</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#donations" class="nav-link text-branco">Doações</a>
+                        </li>
+                    </ul>
+                    <ul class="ml-auto list-unstyled mb-0">
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/splycraft"
+                                class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/4bMXJy57VF"
+                                class="pl-3 pr-3"><span class="icon-headphones"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- É sobre isso -->
+    <section id="info-pvp" class="d-flex">
+        <div class="container position-relative align-self-center">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-group text-start">
+                                    <div class="card">
+                                        <img src="./images/quest.jpg  " class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <img src="./images/zombie.jpg" style="width: 40px" alt="">
+                                                <a class="text-vermelho text-decoration-none" href="">Quests e
+                                                    Eventos</a>
+                                            </h3>
+                                            <p class="card-text text-cinza">Eventos únicos e quests como a da imagem te
+                                                esperam. Complete-os e ganhe diversas recompensas</p>
+                                            <div class="card-muted-text">
+                                                <p class="card-text pt-2"><small class="text-muted">Encontre-os
+                                                        digitando /warp</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mx-lg-4">
+                                        <img src="./images/minalapis.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <img src="./images/Cactus.png" style="width: 50px" alt="">
+                                                <a style="color: #228B22!important" class="text-decoration-none"
+                                                    href="">Economia balanceada</a>
+                                            </h3>
+                                            <p class="card-text text-cinza">Não é só mineração, tá? Aqui você pode
+                                                construir fazenda(s) ou ter a sua própria loja! ;)</p>
+                                            <div class="card-muted-text">
+                                                <p class="card-text"><small class="text-muted">Comando em jogo:
+                                                        /fazenda</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./images/plotme.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <img src="./images/bloco.png" style="width: 45px" alt="">
+                                                <a style="color: #008B8B!important" class="text-decoration-none"
+                                                    href="">Seu próprio terreno!</a>
+                                            </h3>
+                                            <p class="card-text text-cinza">Não tem problema se não gostar do PVP! Pode
+                                                aproveitar seu próprio terreno e construir o que quiser.</p>
+                                            <div class="card-muted-text">
+                                                <p class="card-text"><small class="text-muted">Comando em jogo: /plotme
+                                                        help</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-group text-start">
+                                    <div class="card">
+                                        <img src="./images/minaemerald.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <img src="./images/arco.png" style="width: 45px" alt="">
+                                                <a style="color: #FF8C00!important" class="text-decoration-none"
+                                                    href="">Mina PVP</a>
+                                            </h3>
+                                            <p class="text-cinza card-text">Aqui o lucro pode ser maior, mas se passar
+                                                da marcação, atenção. PVP ATIVO</p>
+                                            <div class="card-muted-text">
+                                                <p class="card-text"><small class="text-muted">Comando em jogo: /warp
+                                                        minapvp</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mx-lg-4">
+                                        <img src="./images/habilidades.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <img src="./images/zombie.jpg" style="width: 45px" alt="">
+                                                <a class="text-vermelho text-decoration-none" href="">Habilidades
+                                                    (MCMMO)</a>
+                                            </h3>
+                                            <p class="text-cinza card-text">Se destaque sendo o jogador com mais status
+                                                do servidor!</p>
+                                            <div class="card-muted-text">
+                                                <p class="card-text"><small class="text-muted">Comando em jogo:
+                                                        /stats</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./images/arena.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <img src="./images/sword.png" style="width: 45px" alt="">
+                                                <a style="color: #800000!important" class="text-decoration-none"
+                                                    href="">Arenas únicas</a>
+                                            </h3>
+                                            <p class="text-cinza card-text">PvP intenso com os melhores eventos e arenas
+                                                exclusivas.</p><br>
+                                            <div class="card-muted-text">
+                                                <p class="card-text"><small class="text-muted">Comando em jogo: /warp
+                                                        arena</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Inner-->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <div class="control-circle">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </div>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <div class="control-circle">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </div>
+            </button>
+        </div>
+        <!--Container-->
+    </section>
+
+    <section id="donations" class="card-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 maincontainer">
+                    <div class="card-loja">
+                        <div class="card-front">
+                            <div class="front-card-display">
+                                <img class="card-img" src="./images/vipiron.jpg" alt="">
+                                <div class="front-card-text-top">
+                                    <h3 class="vertical-center">Toque para rotacionar</h3>
+                                </div>
+                                <div class="front-card-text text-center">
+                                    <strong class="text-iron mb-2 d-block"><del class="text-white">R$10</del> <span
+                                            class="mx-1 text-branco ">&mdash;</span> R$8</strong>
+                                    <i class="icon-info-circle"></i>
+                                    <h3 class="unit-1-heading text-iron">Vip Iron</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="card-img" src="./images/cardback-iron.jpg" alt="">
+                            <div class="card-back-div" onmouseover="sound.play()">
+                                <button type="button" class="btn text-iron-bg text-branco card-back-btn" data-bs-toggle="modal"
+                                    data-bs-target="#modalIron">Doar!</button>
+                            </div>
+                            <div class="card-back-info">
+                                <a href="#moreinfo">
+                                    <button type="button" class="btn btn-success card-back-btn">
+                                        +Info
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 maincontainer">
+                    <div class="card-loja">
+                        <div class="card-front">
+                            <div class="front-card-display">
+                                <img class="card-img" src="./images/vipgold.jpg" alt="">
+                                <div class="front-card-text-top">
+                                    <h3 class="vertical-center">Toque para rotacionar</h3>
+                                </div>
+                                <div class="front-card-text text-center">
+                                    <strong class="text-gold mb-2 d-block"><del class="text-white">R$20</del> <span
+                                            class="mx-1 text-branco ">&mdash;</span> R$15</strong>
+                                    <i class="icon-info-circle"></i>
+                                    <h3 class="unit-1-heading text-gold">Vip Gold</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="card-img" src="./images/cardback-gold.jpg" alt="">
+                            <div class="card-back-div" onmouseover="sound.play()">
+                                <button type="button" class="btn text-gold-bg text-branco card-back-btn" data-bs-toggle="modal"
+                                    data-bs-target="#modalGold">Doar!</button>
+                            </div>
+                            <div class="card-back-info">
+                                <a href="#moreinfo">
+                                    <button type="button" class="btn btn-success card-back-btn">
+                                        +Info
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 maincontainer">
+                    <div class="card-loja">
+                        <div class="card-front">
+                            <div class="front-card-display">
+                                <img class="card-img" src="./images/vipdiamond.jpg" alt="">
+                                <div class="front-card-text-top">
+                                    <h3 class="vertical-center">Toque para rotacionar</h3>
+                                </div>
+                                <div class="front-card-text text-center">
+                                    <strong class="text-diamond mb-2 d-block"><del class="text-white">R$30</del> <span
+                                            class="mx-1 text-branco ">&mdash;</span> R$25</strong>
+                                    <i class="icon-info-circle"></i>
+                                    <h3 class="unit-1-heading text-diamond">Vip Diamond</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="card-img" src="./images/cardback-diamond.jpg" alt="">
+                            <div class="card-back-div" onmouseover="sound.play()">
+                                <button type="button" class="btn text-diamond-bg text-branco card-back-btn" data-bs-toggle="modal"
+                                    data-bs-target="#modalDiamond">Doar!</button>
+                            </div>
+                            <div class="card-back-info">
+                                <a href="#moreinfo">
+                                    <button type="button" class="btn btn-success card-back-btn">
+                                        +Info
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 maincontainer">
+                    <div class="card-loja">
+                        <div class="card-front">
+                            <div class="front-card-display">
+                                <img class="card-img" src="./images/viplendario.jpg" alt="">
+                                <div class="front-card-text-top">
+                                    <h3 class="vertical-center">Toque para rotacionar</h3>
+                                </div>
+                                <div class="front-card-text text-center">
+                                    <strong class="text-lendario mb-2 d-block"><del class="text-white">R$50</del> <span
+                                            class="mx-1 text-branco ">&mdash;</span> R$40</strong>
+                                    <i class="icon-info-circle"></i>
+                                    <h3 class="unit-1-heading text-lendario">Vip Lendário</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="card-img" src="./images/cardback-lendario.jpg" alt="">
+                            <div class="card-back-div" onmouseover="sound.play()">
+                                <button type="button" class="btn text-lendario-bg text-branco card-back-btn" data-bs-toggle="modal"
+                                    data-bs-target="#modalLendario">Doar!</button>
+                            </div>
+                            <div class="card-back-info">
+                                <a href="#moreinfo">
+                                    <button type="button" class="btn btn-success card-back-btn">
+                                        +Info
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="moreinfo" class="card-section">
+        <div class="container pt-4 pb-4 mb-4 rounded branco">
+            <div class="table-content table-responsive align-items-center">
+                <table class="table table-borderless table-responsive fw-bold">
+                    <thead class="text-center">
+                        <tr>
+                            <th class="h4 text-vermelho fw-bold" scope="col">VANTAGENS</th>
+                            <th class="h4 text-iron fw-bold" scope="col">VIP Iron</th>
+                            <th class="h4 text-gold fw-bold pe-0" scope="col">VIP Gold</th>
+                            <th class="h4 text-diamond fw-bold ps-0 pe-0" scope="col">VIP Diamond</th>
+                            <th class="h4 text-lendario fw-bold ps-0" scope="col">VIP Lendário</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body" class="fw-bold text-cinza text-center">
+                        <tr>
+                            <td>Criar Loja</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Mina Exclusiva			
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Loja Exclusiva			
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Pet's			
+                            </td>
+                            <td>Não</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Ter mais de 1 terreno			
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Voar 			
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Tag Exclusiva			
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Entrar Com Server Lotado			
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Kit Diário, Semanal e Mensal			
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Falar colorido no chat			
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Colheitas por mais dinheiro			
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Terrenos maiores no mundo Survival		
+                            </td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> 
+                                <button type="button" 
+                                         class="btn text-iron-bg text-branco card-back-btn btn-vantagens-doar" 
+                                         data-bs-toggle="modal"
+                                         data-bs-target="#modalIron">Doar!
+                                </button>
+                            </td>
+                            <td> 
+                                <button type="button"
+                                         class="btn text-gold-bg text-branco card-back-btn btn-vantagens-doar"
+                                         data-bs-toggle="modal"
+                                         data-bs-target="#modalGold">Doar!
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" 
+                                         class="btn text-diamond-bg text-branco card-back-btn btn-vantagens-doar" 
+                                         data-bs-toggle="modal"
+                                         data-bs-target="#modalDiamond">Doar!
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" 
+                                         class="btn text-lendario-bg text-branco card-back-btn btn-vantagens-doar" 
+                                         data-bs-toggle="modal"
+                                         data-bs-target="#modalLendario">Doar!
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Modal IRON-->
+    <div class="modal fade" id="modalIron" tabindex="-1" aria-labelledby="ironLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ironLabel">
+                        <strong class="text-vermelho">Atenção:</strong>
+                        <p class="text-cinza">Ao realizar uma doação, você confirma que leu e concorda com os
+                            <a class="text-vermelho" href="termos.pdf">termos.</a>
+                        </p>
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <h3>Como a ativação acontece?</h3>
+                    <p class="text-cinza"> Ao realizar a compra, informe sempre seu nome em jogo nas observações. Um
+                        administrador fará a ativação em minutos.</p>
+                    <div class="row pt-4 align-items-center">
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://picpay.me/splycraft target=" _blank"">
+                                <img class="img-pagamento" src="./images/picpay.png" alt="Redirect to Picpay">
+                            </a>
+                        </div>
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://mpago.la/1HbxY97" target="_blank">
+                                <img class="img-pagamento" src="./images/mercado-pago-logo.png"
+                                    alt="Redirect to MercadoPago">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row pt-4 align-items-center justify-content-center">
+                        <div class="col-md-6 payment-methods align-items-center justify-content-center pt-2">
+                           <strong><p>Chave PIX:</strong> +55 11 92000-1470</p>
+                           <p>Gustavo Oliveira Bures Vieira</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn vermelho text-branco" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal GOLD-->
+    <div class="modal fade" id="modalGold" tabindex="-1" aria-labelledby="goldLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="goldLabel">
+                        <strong class="text-vermelho">Atenção:</strong>
+                        <p class="text-cinza">Ao realizar uma doação, você confirma que leu e concorda com os
+                            <a class="text-vermelho" href="termos.pdf">termos.</a>
+                        </p>
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <h3>Como a ativação acontece?</h3>
+                    <p class="text-cinza"> Ao realizar a compra,strong informe sempre a seu nome em jogo nas observações. Um
+                        administrador fará a ativação em minutos.</p>
+                    <div class="row pt-4 align-items-center">
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://picpay.me/splycraft" target="_blank">
+                                <img class="img-pagamento" src="./images/picpay.png" alt="Redirect to Picpay">
+                            </a>
+                        </div>
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://mpago.la/2NmYVZQ" target="_blank">
+                                <img class="img-pagamento" src="./images/mercado-pago-logo.png"
+                                    alt="Redirect to MercadoPago">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row pt-4 align-items-center justify-content-center">
+                        <div class="col-md-6 payment-methods align-items-center justify-content-center pt-2">
+                           <strong><p>Chave PIX:</strong> +55 11 92000-1470</p>
+                           <p>Gustavo Oliveira Bures Vieira</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn vermelho text-branco" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal DIAMOND-->
+    <div class="modal fade" id="modalDiamond" tabindex="-1" aria-labelledby="diamondLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="diamondLabel">
+                        <strong class="text-vermelho">Atenção:</strong>
+                        <p class="text-cinza">Ao realizar uma doação, você confirma que leu e concorda com os
+                            <a class="text-vermelho" href="termos.pdf">termos.</a>
+                        </p>
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <h3>Como a ativação acontece?</h3>
+                    <p class="text-cinza"> Ao realizar a compra, informe sempre seu nome em jogo nas observações. Um
+                        administrador fará a ativação em minutos.</p>
+                    <div class="row pt-4 align-items-center">
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://picpay.me/splycraft" target="_blank">
+                                <img class="img-pagamento" src="./images/picpay.png" alt="Redirect to Picpay">
+                            </a>
+                        </div>
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://mpago.la/1qSdwyj" target="_blank">
+                                <img class="img-pagamento" src="./images/mercado-pago-logo.png"
+                                    alt="Redirect to MercadoPago">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row pt-4 align-items-center justify-content-center">
+                        <div class="col-md-6 payment-methods align-items-center justify-content-center pt-2">
+                           <strong><p>Chave PIX:</strong> +55 11 92000-1470</p>
+                           <p>Gustavo Oliveira Bures Vieira</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn vermelho text-branco" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal LENDARIO-->
+    <div class="modal fade" id="modalLendario" tabindex="-1" aria-labelledby="lendarioLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lendarioLabel">
+                        <strong class="text-vermelho">Atenção:</strong>
+                        <p class="text-cinza">Ao realizar uma doação, você confirma que leu e concorda com os
+                            <a class="text-vermelho" href="termos.pdf">termos.</a>
+                        </p>
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <h3>Como a ativação acontece?</h3>
+                    <p class="text-cinza"> Ao realizar a compra, informe sempre seu nome em jogo nas observações. Um
+                        administrador fará a ativação em minutos.</p>
+                    <div class="row pt-4 align-items-center">
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://picpay.me/splycraft" target="_blank">
+                                <img class="img-pagamento" src="./images/picpay.png" alt="Redirect to Picpay">
+                            </a>
+                        </div>
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://mpago.la/1asxBgj" target="_blank">
+                                <img class="img-pagamento" src="./images/mercado-pago-logo.png"
+                                    alt="Redirect to MercadoPago">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4 align-items-center justify-content-center">
+                    <div class="col-md-6 payment-methods align-items-center justify-content-center pt-2">
+                       <strong><p>Chave PIX:</strong> +55 11 92000-1470</p>
+                       <p>Gustavo Oliveira Bures Vieira</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn vermelho text-branco" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="pt-2 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="https://discord.gg/4bMXJy57VF"><img src="./images/discord.png"></a>
+                    <a href="https://www.instagram.com/splycraft/"><img src="./images/instagram.png"></a>
+                    <p class="text-branco mt-2">Website Desenvolvido por <a class="text-branco" href=""
+                            target="_blank">Sidney</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./scripts/script.js"></script>
 </body>
+
 </html>
