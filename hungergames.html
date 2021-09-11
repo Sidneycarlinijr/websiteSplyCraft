@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/hungergames.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <title>SplyCraft</title>
+</head>
+
+<body>
+    <header>
+        <nav id="home-navbar" class="navbar navbar-expand-lg navbar-dark">
+            <div class="d-flex container ml-4">
+                <a href="index.html" class="navbar-brand">
+                    <img id="splyCraftLogo" width="115" src="./images/splyIcon.jpg" alt="">
+                </a>
+
+                <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-branco">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-vermelho" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Servidores</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a href="bedwars.html" class="dropdown-item">BedWars</a></li>
+                                <li><a href="fullpvp.html" class="dropdown-item">Full PVP</a></li>
+                                <li><a href="skywars.html" class="dropdown-item">SkyWars</a></li>
+                                <li><a href="dayz.html" class="dropdown-item">Dayz</a></li>
+                                <li><a href="#" class="dropdown-item text-vermelho">Hunger Games</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#donations" class="nav-link text-branco">Doações</a>
+                        </li>
+                    </ul>
+                    <ul class="ml-auto list-unstyled mb-0">
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/splycraft"
+                                class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/4bMXJy57VF"
+                                class="pl-3 pr-3"><span class="icon-headphones"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- É sobre isso -->
+    <section id="info-pvp" class="d-flex">
+        <div class="container position-relative align-self-center">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-group text-start">
+                                    <div class="card">
+                                        <img src="./images/hgimg1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <img src="./images/arco.png" style="width: 40px" alt="">
+                                                <a class="text-vermelho text-decoration-none" href="">Construa e sobreviva</a>
+                                            </h3>
+                                            <p class="card-text text-cinza">Tenha seu próprio terreno no mundo de DayZ! Abrigue-se contra zumbis e outros jogadores!</p>
+                                        </div>
+                                    </div>
+                                    <div class="card mx-lg-4">
+                                        <img src="./images/hgimg2.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <img src="./images/sword.png" style="width: 50px" alt="">
+                                                <a style="color: #228B22!important" class="text-decoration-none"
+                                                    href="">Colete itens e armas</a>
+                                            </h3>
+                                            <p class="card-text text-cinza">Se aventure e busque itens nas cidades e spots de farm!</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./images/hgimg3.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <img src="./images/caarliniHead.jpg" style="width: 45px" alt="">
+                                                <a style="color: #008B8B!important" class="text-decoration-none"
+                                                    href="">Conquiste as cidades</a>
+                                            </h3>
+                                            <p class="card-text text-cinza">Crie amizades, juntem-se em um clan e dominem cidades inteiras!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--Inner-->
+                    </div>
+                </div>
+            </div>
+        </div><!--Container-->
+    </section>
+
+    <section id="donations" class="card-section">
+        <div class="container">
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 maincontainer">
+                    <div class="card-loja">
+                        <div class="card-front">
+                            <div class="front-card-display">
+                                <img class="card-img" src="./images/vipdayz.png" alt="">
+                                <div class="front-card-text-top">
+                                    <h3 class="vertical-center">Toque para rotacionar</h3>
+                                </div>
+                                <div class="front-card-text text-center">
+                                    <strong class="text-diamond mb-2 d-block"><del class="text-white">R$30</del> <span
+                                            class="mx-1 text-branco ">&mdash;</span> R$20</strong>
+                                    <i class="icon-info-circle"></i>
+                                    <h3 class="unit-1-heading text-diamond">VIP HungerGames</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="card-img" src="./images/cardback-diamond.jpg" alt="">
+                            <div class="card-back-div" onmouseover="sound.play()">
+                                <button type="button" class="btn text-diamond-bg text-branco card-back-btn" data-bs-toggle="modal"
+                                    data-bs-target="#modalVip">Doar!</button>
+                            </div>
+                            <div class="card-back-info">
+                                <a href="#moreinfo">
+                                    <button type="button" class="btn btn-success card-back-btn">
+                                        +Info
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4 maincontainer">
+                    <div class="container pt-4 pb-4 mb-4 rounded branco">
+                        <div class="table-content table-responsive align-items-center">
+                            <table class="table table-borderless table-responsive fw-bold">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th class="h4 text-vermelho fw-bold" scope="col">VANTAGENS</th>
+                                        <th class="h4 text-diamond fw-bold" scope="col">VIP</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-body" class="fw-bold text-cinza text-center">
+                                    <tr>
+                                        <td>Tag Exclusiva</td>
+                                        <td>Sim</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Entrar mesmo com servidor cheio</td>
+                                        <td>Sim</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kit diário, semanal e mensal</td>
+                                        <td>Sim</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mochila maior</td>
+                                        <td>Sim</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Criar um terreno muito maior</td>
+                                        <td>Sim</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <button type="button" 
+                                                     class="btn text-diamond-bg text-branco card-back-btn btn-vantagens-doar" 
+                                                     data-bs-toggle="modal"
+                                                     data-bs-target="#modalVip">Doar!
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal PADRAO-->
+    <div class="modal fade" id="modalVip" tabindex="-1" aria-labelledby="vipLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vipLabel">
+                        <strong class="text-vermelho">Atenção:</strong>
+                        <p class="text-cinza">Ao realizar uma doação, você confirma que leu e concorda com os
+                            <a class="text-vermelho" href="termos.pdf">termos.</a>
+                        </p>
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <h3>Como a ativação acontece?</h3>
+                    <p class="text-cinza"> Ao realizar a compra, informe sempre seu nome em jogo nas observações. Um
+                        administrador fará a ativação em minutos.</p>
+                    <div class="row pt-4 align-items-center">
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://picpay.me/splycraft" target="_blank">
+                                <img class="img-pagamento" src="./images/picpay.png" alt="Redirect to Picpay">
+                            </a>
+                        </div>
+                        <div class="col-md-6 payment-methods">
+                            <a href="https://mpago.la/2kEcpva" target="_blank">
+                                <img class="img-pagamento" src="./images/mercado-pago-logo.png"
+                                    alt="Redirect to MercadoPago">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row pt-4 align-items-center justify-content-center">
+                        <div class="col-md-6 payment-methods align-items-center justify-content-center pt-2">
+                           <strong><p>Chave PIX:</strong> +55 11 92000-1470</p>
+                           <p>Gustavo Oliveira Bures Vieira</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn vermelho text-branco" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="pt-2 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="https://discord.gg/4bMXJy57VF"><img src="./images/discord.png"></a>
+                    <a href="https://www.instagram.com/splycraft/"><img src="./images/instagram.png"></a>
+                    <p class="text-branco mt-2">Website Desenvolvido por <a class="text-branco" href="https://api.whatsapp.com/send?phone=5547997544752&text=Oi!%20cheguei%20aqui%20pelo%20SplyCraft."
+                            target="_blank">Sidney</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
